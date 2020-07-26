@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/petHotelPrimary</item>
+        <item name="colorPrimaryDark">@color/petHotelPrimaryDark</item>
+        <item name="colorAccent">@color/petHotelSecondary</item>
+        <item name="colorSecondary">@color/petHotelSecondary</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="materialButtonOutlinedStyle">@style/phOutlinedButtonStyle</item>
+        <item name="materialButtonStyle">@style/phButtonStyle</item>
+        <item name="buttonStyle">@style/phAppCompatButtonStyle</item>
+        <item name="android:fontFamily">@font/nanum_barun_gothic</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="phButtonTextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/nanum_barun_gothic</item>
+        <item name="android:fontFamily">@font/nanum_barun_gothic</item>
+    </style>
+
+    <style name="phButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+        <item name="android:textAppearance">@style/phButtonTextAppearance</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button.TextButton" parent="">
+        <item name="colorPrimary">@color/petHotelSecondary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="phTextButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+        <item name="android:textAppearance">@style/phButtonTextAppearance</item>
+        <!--        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>-->
+    </style>
+
+
+    <style name="phOutlinedButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+        <item name="android:textAppearance">@style/phButtonTextAppearance</item>
+        <!--        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>-->
+    </style>
+
+    <style name="phAppCompatButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custom_button_selector</item>
+        <item name="android:textAppearance">@style/phButtonTextAppearance</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="phHeadline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/nanum_barun_gothic_bold</item>
+        <item name="android:fontFamily">@font/nanum_barun_gothic_bold</item>
+    </style>
+
+    <style name="phHeadline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/nanum_barun_gothic_bold</item>
+        <item name="android:fontFamily">@font/nanum_barun_gothic_bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="phHeadline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/nanum_barun_gothic_bold</item>
+        <item name="android:fontFamily">@font/nanum_barun_gothic_bold</item>
+    </style>
+
+    <style name="phTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="fontFamily">@font/nanum_barun_gothic_light</item>
+        <item name="android:fontFamily">@font/nanum_barun_gothic_light</item>
+    </style>
+
+    <style name="phBody1" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontFamily">@font/nanum_barun_gothic_light</item>
+        <item name="android:fontFamily">@font/nanum_barun_gothic_light</item>
+    </style>
+
+    <style name="phBody2" parent="TextAppearance.AppCompat.Body2">
+        <item name="fontFamily">@font/nanum_barun_gothic_ultra_light</item>
+        <item name="android:fontFamily">@font/nanum_barun_gothic_ultra_light</item>
+    </style>
+
+    <style name="phEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:layout_margin">@dimen/margin_0_5x</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

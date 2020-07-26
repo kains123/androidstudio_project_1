@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mypage.MyPageFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_large_16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_user_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pet_profile_placeholder"
+                tools:ignore="ContentDescription"
+                />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize ="@dimen/text_size_medium"
+                style="@style/phTitle"
+                android:layout_centerInParent="true"
+                android:text="@string/my_page_nickname"
+                />
+
+            <ImageButton
+                android:id="@+id/img_btn_user_edit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toEndOf="@id/tv_nickname"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_0_5x"
+                android:backgroundTint="@color/colorTransparent"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small_4dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mypetmily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/phTitle"
+                    android:text="@string/my_page_mypetmily"
+                    />
+
+                <ImageButton
+                    android:id="@+id/img_btn_pet_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:backgroundTint="@color/colorTransparent"
+                    app:srcCompat="@drawable/ic_baseline_add_black24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include layout="@layout/my_page_pet_layout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rv_place_info"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    tools:layout_editor_absoluteX="-40dp"-->
+<!--                    tools:layout_editor_absoluteY="-198dp"-->
+<!--                    tools:listitem="@layout/pet_info_view_holder"-->
+<!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>-->
+
+
+            </LinearLayout>
+
+
+            <!--       my page 밑 부분 항목        -->
+            <include
+                android:id="@+id/my_pick"
+                layout="@layout/my_page_list_layout"/>
+
+            <include
+                android:id="@+id/my_review"
+                layout="@layout/my_page_list_layout"/>
+
+            <include
+                android:id="@+id/settings"
+                layout="@layout/my_page_list_layout"/>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

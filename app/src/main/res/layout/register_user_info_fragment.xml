@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.authentication.register.RegisterUserInfoFragment"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_register_user_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/phTitle"
+            android:layout_marginBottom="@dimen/margin_1x"
+            android:text="@string/enter_user_info_title" />
+
+
+        <!--        이메일 입력 필드 / 버튼 텍스트 : 중복 확인 -->
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_upload_user_image"
+                android:src="@drawable/ic_file_upload_black_24dp"
+                android:padding="@dimen/default_padding_8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/btn_take_user_photo"
+                android:padding="@dimen/default_padding_8dp"
+                android:src="@drawable/ic_photo_camera_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/register_user_email_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="@dimen/padding_small_4dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/email_title_field"-->
+<!--                style="@style/phTitle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/margin_1x"-->
+<!--                android:layout_marginTop="@dimen/margin_0_5x"-->
+<!--                android:layout_marginBottom="@dimen/margin_0_5x"-->
+<!--                android:text="이메일"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/email_edit_text_field"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="@dimen/padding_large_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/email_button_field"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중복확인"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/email_edit_text_field"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/email_edit_text_field"
+                app:layout_constraintTop_toTopOf="@+id/email_edit_text_field" />
+
+            <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <!--  이름 혹은 닉네임 입력 필드 / 버튼 텍스트 : 중복 확인 -->
+
+            <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--            android:id="@+id/register_user_nickname_layout"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:padding="@dimen/padding_small_4dp">-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/nickname_title_field"-->
+            <!--                style="@style/phTitle"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/margin_1x"-->
+            <!--                android:layout_marginTop="@dimen/margin_0_5x"-->
+            <!--                android:layout_marginBottom="@dimen/margin_0_5x"-->
+            <!--                android:text="닉네임"-->
+            <!--                app:layout_constraintBottom_toTopOf="@+id/nickname_edit_text_field"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_register_user_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:riv_corner_radius="12dp"
+                app:layout_constraintBottom_toTopOf="@id/email_edit_text_field"
+                android:layout_width="@dimen/profile_image_size"
+                android:layout_height="@dimen/profile_image_size"
+                android:scaleType="centerCrop"
+                android:src="@color/petHotelLightGrey"
+                android:layout_marginBottom="@dimen/margin_1x"
+                />
+
+
+            <TextView
+                android:id="@+id/upload_icon"
+                android:drawableTop="@drawable/ic_file_upload_black_24dp"
+                android:drawablePadding="@dimen/padding_small_4dp"
+                android:gravity="center"
+                android:text="사진업로드"
+                app:layout_constraintTop_toTopOf="@id/img_register_user_image"
+                app:layout_constraintStart_toStartOf="@id/img_register_user_image"
+                app:layout_constraintEnd_toEndOf="@id/img_register_user_image"
+                app:layout_constraintBottom_toBottomOf="@id/img_register_user_image"
+                android:textColor="@color/petHotelSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/email_edit_text_field"
+                style="@style/phEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이메일"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/nickname_edit_text_field"
+                app:layout_constraintEnd_toEndOf="@+id/nickname_edit_text_field"
+                app:layout_constraintStart_toStartOf="@+id/nickname_edit_text_field"
+                app:layout_constraintTop_toBottomOf="@id/img_register_user_image" />
+
+            <EditText
+                android:id="@+id/nickname_edit_text_field"
+                style="@style/phEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="성함"
+                app:layout_constraintBottom_toTopOf="@+id/phone_edit_text_field"
+                app:layout_constraintEnd_toEndOf="@+id/phone_edit_text_field"
+                app:layout_constraintStart_toStartOf="@+id/phone_edit_text_field" />
+
+            <EditText
+                android:id="@+id/phone_edit_text_field"
+                style="@style/phEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="휴대전화번호 ( - 생략 )"
+                app:layout_constraintBottom_toTopOf="@+id/password_edit_text_field"
+                app:layout_constraintEnd_toEndOf="@+id/password_edit_text_field"
+                app:layout_constraintStart_toStartOf="@+id/password_edit_text_field" />
+
+            <EditText
+                android:id="@+id/password_edit_text_field"
+                style="@style/phEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:ems="10"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toTopOf="@+id/password_check_edit_text_field"
+                app:layout_constraintEnd_toEndOf="@+id/password_check_edit_text_field"
+                app:layout_constraintStart_toStartOf="@+id/password_check_edit_text_field" />
+
+            <EditText
+                android:id="@+id/password_check_edit_text_field"
+                style="@style/phEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:ems="10"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_edit_text_field" />
+
+            <Button
+                android:id="@+id/nickname_button_field"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중복확인"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/nickname_edit_text_field"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nickname_edit_text_field"
+                app:layout_constraintTop_toTopOf="@+id/nickname_edit_text_field" />
+
+            <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+            <!--       입력 값은 비밀번호 InputType.isPassword -->
+            <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--            android:id="@+id/register_user_password_layout"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:padding="@dimen/padding_small_4dp">-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/password_title_field"-->
+            <!--                style="@style/phTitle"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/margin_1x"-->
+            <!--                android:layout_marginTop="@dimen/margin_0_5x"-->
+            <!--                android:layout_marginBottom="@dimen/margin_0_5x"-->
+            <!--                android:text="비밀번호"-->
+            <!--                app:layout_constraintBottom_toTopOf="@+id/password_edit_text_field"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <!--        <TextView-->
+            <!--            android:text="*비밀번호를 정확히 입력해 주세요"-->
+            <!--            android:textColor="@android:color/holo_red_dark"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"/>-->
+
+            <!--       입력 값은 비밀번호 InputType.isPassword -->
+
+            <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--            android:id="@+id/register_user_password_check_layout"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:padding="@dimen/padding_small_4dp">-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/password_check_title_field"-->
+            <!--                style="@style/phTitle"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/margin_1x"-->
+            <!--                android:layout_marginTop="@dimen/margin_0_5x"-->
+            <!--                android:layout_marginBottom="@dimen/margin_0_5x"-->
+            <!--                android:text="비밀번호 확인"-->
+            <!--                app:layout_constraintBottom_toTopOf="@+id/password_check_edit_text_field"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <TextView
+                android:id="@+id/tv_register_password_not_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="*비밀번호가 일치하지 않습니다."
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/tv_register_already_member"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_check_edit_text_field" />
+
+
+            <TextView
+                android:id="@+id/tv_register_already_member"
+                style="@style/phBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="이미 회원이신가요?"
+                app:layout_constraintEnd_toStartOf="@+id/tv_login_from_register_screen"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_register_password_not_match" />
+
+
+            <TextView
+                android:id="@+id/tv_login_from_register_screen"
+                style="@style/phBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그인하기"
+                android:textColor="@color/petHotelSecondary"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_register_already_member"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_register_already_member"
+                app:layout_constraintTop_toTopOf="@+id/tv_register_already_member" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btn_register_pet_info"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="반려견 등록하기"-->
+<!--            android:layout_marginEnd="@dimen/margin_2x"-->
+<!--            android:layout_marginStart="@dimen/margin_2x"-->
+<!--            />-->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_register_complete"
+            android:layout_marginEnd="@dimen/margin_2x"
+            android:layout_marginStart="@dimen/margin_2x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원가입 완료"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

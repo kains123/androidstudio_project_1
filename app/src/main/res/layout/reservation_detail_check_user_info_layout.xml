@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_large_16dp"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--    견주 성함, 이메일, 전화번호 확인받기 / 만약에 정보 입력
+안되어있으면 입력하도록 하기. 체크박스로 로그인 정보에서 가져오기
+가능하도록 -->
+
+
+    <TextView
+        android:text="예약자 정보 확인"
+        style="@style/phTitle"
+        android:layout_marginStart="@dimen/margin_0_5x"
+        android:layout_marginBottom="@dimen/margin_1x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        style="@style/phEditText"
+        android:id="@+id/et_reservation_detail_user_name"
+        android:hint="예약자명"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        style="@style/phEditText"
+        android:id="@+id/et_reservation_detail_user_email"
+        android:hint="이메일 주소"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        style="@style/phEditText"
+        android:id="@+id/et_reservation_detail_user_phone"
+        android:hint="휴대전화번호 (- 생략)"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

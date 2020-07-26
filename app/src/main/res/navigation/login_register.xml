@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/loginRegisterFragment">
+
+    <activity
+        android:id="@+id/loginRegisterActivity"
+        android:name="com.prography.pethotel.ui.authentication.LoginRegisterActivity"
+        android:label="activity_login_register"
+        tools:layout="@layout/activity_login_register"/>
+
+    <fragment
+        android:id="@+id/registerUserInfoFragment"
+        android:name="com.prography.pethotel.ui.authentication.register.RegisterUserInfoFragment"
+        android:label="register_user_info_fragment"
+        tools:layout="@layout/register_user_info_fragment" >
+        <action
+            android:id="@+id/action_registerUserInfoFragment_to_loginRegisterFragment"
+            app:destination="@id/loginRegisterFragment"
+            app:enterAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginRegisterFragment"
+        android:name="com.prography.pethotel.ui.authentication.LoginRegisterMainFragment"
+        android:label="login_register_fragment"
+        tools:layout="@layout/login_register_fragment" >
+        <action
+            android:id="@+id/action_loginRegisterFragment_to_registerUserInfoFragment"
+            app:destination="@id/registerUserInfoFragment"
+            app:enterAnim="@anim/fragment_open_enter" />
+    </fragment>
+
+</navigation>

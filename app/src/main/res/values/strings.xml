@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">마이펫밀리</string>
+    <string name="title_activity_login">마이펫밀리 로그인</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">유효한 이메일이 아닙니다.</string>
+    <string name="invalid_password">비밀번호를 입력해 주세요.</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="enter_user_info_title">마이펫밀리의 멤버가 되어주세요!</string>
+    <string name="register_check_password_title">비밀번호확인</string>
+    <string name="register_check_password_hint">비밀번호를 확인해 주세요</string>
+    <string name="previous_screen">이전화면</string>
+    <string name="next_screen">휴대전화 인증하기</string>
+    <string name="register_enter_password_hint">비밀번호를 입력해 주세요</string>
+    <string name="register_enter_password_title">비밀번호</string>
+    <string name="register_enter_phone_number_hint">휴대전화번호를 입력해 주세요</string>
+    <string name="register_enter_phone_number_title">휴대전화번호</string>
+    <string name="register_enter_email_hint">이메일을 입력해 주세요</string>
+    <string name="register_enter_email_title">이메일</string>
+    <string name="register_enter_username_hint">이름/닉네임을 입력해 주세요</string>
+    <string name="register_enter_username_title">이름/닉네임</string>
+    <string name="how_many_dogs_question">몇 마리의 반려견을\n 기르고 계신가요?</string>
+    <string name="login_screen_welcome_message">애견호텔 안심예약은</string>
+    <string name="my_page_nickname">털실</string>
+    <string name="my_page_mypetmily">마이펫밀리</string>
+    <string name="my_page_my_pick">내가 찜한 곳</string>
+    <string name="my_page_my_review">내가 쓴 리뷰</string>
+    <string name="my_page_alarm_setting">알림 설정</string>
+    <string name="my_page_setting">설정</string>
+    <string name="register_auth_phone">인증하기</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pet_no">펫 카드 %d</string>
+    <string name="sample_hotel_description">오랜 경험과 노하우를 바탕으로 오직 펫호텔.유치원을 독립적으로 운영하는 곳입니다.
+애견카페와는 달리 외부인 출입은 금지되며 전문스탭이 24시간 상주하며 케어합니다.
+5중안전장치,30대의CCTV,철저한 위생관리,개별룸과 개별CCTV등 최신장비가 설치되어 있습니다.\n\n
+저희 쿨쿨펫 모든 스탭은 방문하는 아이들이 편안히 머물다 안전하게 돌아갈수있도록
+항상 최선을 다하겠습니다.</string>
+
+    <string name="lorem_ipsum_paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet eros mi. Suspendisse potenti. Nulla lorem purus, egestas et sem at, volutpat hendrerit nisl. Sed egestas risus felis, condimentum vehicula lorem maximus at. Nullam sodales semper dolor, eu venenatis urna cursus eget. Vivamus sit amet varius ex. Suspendisse vehicula sagittis ligula vel bibendum. Donec at augue lacus. Quisque sagittis imperdiet risus eget ullamcorper.
+    </string>
+    <string name="head_my_petmily"><![CDATA[ My Petmily ]]></string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="add_search_result">메인 탭에 결과 추가하기</string>
+    <string name="cancel_add_search_result">해시태그 추가 취소하기</string>
+    <string name="add_search_result_complete">해시태그 추가 완료!</string>
+    <string name="no_review_yet">아직 후기가 없습니다!</string>
+    <string name="user_average_rating"><![CDATA[ %d / 5.0 ]]></string>
+    <string name="registration_fail_msg">해당 닉네임 혹은 이메일을 사용하실 수 없습니다!</string>
+    <string name="enter_info_msg">정보를 입력해 주세요.</string>
+    <string name="animal_num_check_fail_msg">동물등록번호 확인 실패</string>
+    <string name="size_criteria_string">소형견 기준 ~%s kg\n중형견 기준 ~%s kg\n대형견 기준 ~%s kg</string>
+    <string name="reservation_hotel_name">%s 예약을 진행합니다.</string>
+    <string name="forgot_password_msg">비밀번호를 잊으셨나요?</string>
+    <string name="hotel_review_title">%s 리뷰를 작성합니다.</string>
+    <string name="checkname">이름 : %s</string>
+    <string name="checkbreed">견종 : %s</string>
+    <string name="checkgender">성별 : %s</string>
+    <string name="checkyear">출생년도 : %s</string>
+    <string name="checkneuter">중성화 : %s</string>
+    <string name="checknumber">동물등록번호 : %s</string>
+
+
+</resources>
